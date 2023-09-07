@@ -1,0 +1,11 @@
+video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+    .a1:hover{ 
+        color:red;     
+        /* 改变超链接的字体颜色 */ 
+}

@@ -1,0 +1,182 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        position: relative;
+        height: calc(100vh);
+        background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(1, 4, 31)30%,rgb(2, 2, 46))60%;
+        overflow: hidden;
+    }
+    .moom{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0px 0px 40px white ;
+        border-radius: 50%;
+        background: rgb(243, 238, 172);
+    }
+    .moom>div{
+        position: relative;
+        top: 80px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        background: rgb(53, 52, 52);
+        filter: blur(17px);
+    }
+    .moom>div:nth-child(2){
+        top: 90px;
+        left: 10px;
+    }
+    .clouds{
+        position: absolute;
+        top: 10%;
+        width: 250%;
+        height: 150px;
+        animation: move 10s 0s linear infinite;
+    }
+    .clouds>.cloud{
+      width: 100%;
+    }
+    @keyframes move {
+        0%{
+            right: 0%;
+        }
+        100%{
+            right: 250%;
+        }
+    }
+    .clouds>.cloud:nth-child(2){
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+    .clouds>.cloud:nth-child(3){
+        position: absolute;
+        top: 80%;
+        left: 55%;
+    }
+    .clouds>.cloud:nth-child(4){
+        position: absolute;
+        top: 50%;
+        left: 100%;
+    }
+    .clouds>.cloud:nth-child(5){
+        position: absolute;
+        top: 50%;
+        left: 130%;
+    }
+    .clouds>.cloud:nth-child(6){
+        position: absolute;
+        top: 50%;
+        left: 200%;
+    }
+    .clouds>.cloud:nth-child(7){
+        position: absolute;
+        top: 50%;
+        left: 150%;
+    }
+    .clouds>.cloud:nth-child(8){
+        position: absolute;
+        top: 50%;
+        left: 170%;
+    }
+    .clouds>.cloud:nth-child(9){
+        position: absolute;
+        top: 50%;
+        left: 230%;
+    }
+    .clouds>.cloud:nth-child(10){
+        position: absolute;
+        top: 80%;
+        left: 255%;
+    }
+    .clouds>.cloud>div{
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        width: 500px;
+        height: 30px;
+        background: rgb(255, 255, 255);
+        opacity: 0.7;
+        filter: blur(100px);
+    }
+    .clouds>.cloud>div:nth-child(2){
+        top: 40%;
+        left: 10%;
+    }
+    .clouds>.cloud>div:nth-child(3){
+        top: 30%;
+        left: 20%;
+    }
+    .strars>span{
+        position: absolute;
+        top: -10%;
+        left: 20%;
+        width: 10px;
+        height: 5px;
+        box-shadow: 0 0 10px white ;
+        border-radius: 50%;
+        background: #fff;
+ 
+        transform: rotate(-25deg);
+    } 
+    .strars>span::before{
+        content: "";
+        position: absolute;
+        top: 40%;
+        width: 400px;
+        height: 1px;
+        background: linear-gradient(90deg, #fff,transparent);
+    }
+    .strars>span:nth-child(1){
+        left: 70%;
+        animation: move1 3s 0s linear infinite;
+    }  
+    .strars>span:nth-child(2){
+        left: 75%;
+        animation: move1 3s 0.5s linear infinite;
+    }  
+    .strars>span:nth-child(3){
+        left: 150%;
+        animation: move1 3s 1s linear infinite;
+    } 
+    .strars>span:nth-child(4){
+        left: 120%;
+        animation: move1 3s 0.5s linear infinite;
+    }   
+    .strars>span:nth-child(5){
+        left: 40%;
+        animation: move1 3s 1s linear infinite;
+    }  
+    .strars>span:nth-child(6){
+        left: 50%;
+        animation: move1 3s 0.5s linear infinite;
+    }  
+    .strars>span:nth-child(7){
+        left: 60%;
+        animation: move1 3s 1s linear infinite;
+    } 
+    .strars>span:nth-child(8){
+        left: 70%;
+        animation: move1 3s 0.5s linear infinite;
+    }   
+    .strars>span:nth-child(9){
+        left: 90%;
+        animation: move1 3s 1s linear infinite;
+    }  
+    .strars>span:nth-child(10){
+        left: 110%;
+        animation: move1 3s 0.5s linear infinite;
+    }  
+    @keyframes move1 {
+        0%{
+            transform: rotate(-25deg) translateX(0px);
+        }
+        100%{
+            transform: rotate(-25deg) translateX(-3000px);
+        }
+    }
