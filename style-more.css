@@ -5,7 +5,10 @@ table,td,th{
 }
 table{
    border: 1px solid white; 
+   margin:auto;
 }
+
+
 tr{
     color: rgb(244, 249, 243);
     font: size 20px;
